@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="france">
+<head>
+    <meta charset="UTF-8">
+    <title>VOYYAGER - La Meilleur Agence de Voyages!</title>
+
+    <script src="https://kit.fontawesome.com/92265a4cc3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header  -->
+
+<header>
+
+    <a href="#accueil" class="logo"><i class="fab fa-vine"></i>oyyager</a>
+
+    <nav class="barre-de-navigation">
+        <a href="#accueil">Accueil</a>
+        <a href="#réserver">Réserver</a>
+        <a href="#forfaits">Forfaits</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#commentaires">Commentaires</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+
+<!-- Accueil -->
+
+<section class="accueil" id="accueil">
+
+    <div class="content">
+        <h3>Vers le monde des vacances incroyables</h3>
+        <p>Voyyager ouvre la porte à la création de souvenirs!</p>
+        <a href="#forfaits" class="btn"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+
+    <div class="arrière-plan">
+        <img src="images/background.jpg">
+    </div>
+
+</section>
+
+
+
+<!-- Réservation  -->
+
+<section class="réserver" id="réserver">
+
+    <h1 class="heading">Réservez Maintenant!</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/last-section.png" >
+        </div>
+
+        <form action="php/réservation.php" method="post">
+            <div class="inputBox">
+                <h3>Où</h3>
+                <input type="text" placeholder="Nom de la destination..." name="destination" required>
+            </div>
+            <div class="inputBox">
+                <h3>combien de personnes</h3>
+                <input type="number" min ="1" placeholder="Nombre d'invités..." name="nombre_personnes" required>
+            </div>
+            <div class="inputBox">
+                <h3>votre nom et prénom</h3>
+                <input type="text" placeholder="nom complet..." name="nom_complet" required>
+            </div>
+            <div class="inputBox">
+                <h3>votre numéro de téléphone</h3>
+                <input type="tel" placeholder="06 xx xx xx xx" name="tele" required>
+            </div>
+            <input type="submit" class="btn" value="Réserver">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- Forfaits  -->
+
+<section class="forfaits" id="forfaits">
+
+    <h1 class="heading">Forfaits</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/p-1.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Marrakesh </h3>
+                <p>La ville rouge est célèbre pour ses souks (marchés) et le souk Semmarine est le plus grand de tous. Tapis, maroquinerie, 
+                    argenterie et vaisselle de toutes formes et tailles sont proposés dans ce labyrinthe!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> 1499.00 DH <span>1999.00 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-2.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Istanbul </h3>
+                <p>Istanbul est la plus grande ville de Turquie et surtout connue pour être le centre culturel, économique et historique de la Turquie!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> 6500.00 DH <span>7999.99 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-3.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Caire </h3>
+                <p>Sur le Nil, le Caire est célèbre pour sa propre histoire, 
+                    préservée dans la fabuleuse cité islamique médiévale et les sites coptes du vieux Caire. 
+                    Le musée égyptien au centre de la ville est à voir absolument, avec ses innombrables objets de l'Égypte ancienne.
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 4999.00 DH <span>5799.99 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Paris </h3>
+                <p>La Tour Eiffel, le Louvre, le Panthéon ou le Sacré-Cœur sont sûrement quelques-unes des choses les plus reconnaissables pour lesquelles Paris est connue.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> 10999.00 DH <span>12500.00 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Kuala Lumpur </h3>
+                <p>KL est largement reconnu pour ses nombreux monuments, notamment les tours jumelles Petronas, les plus hauts gratte-ciel jumeaux du monde!, 
+                    le marché aux puces de Petaling Street et les grottes de Batu, vieilles de plus de 400 millions d'années!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 7500.00 DH <span>8499.00 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-6.jpg" >
+            <div class="content">
+                <h3> <i class="fas fa-location-arrow"></i> Rome </h3>
+                <p>Rome est célèbre pour le Colisée, le Forum romain et une métropole tentaculaire à l'architecture classique. 
+                    la fontaine de Trevi, une cuisine incroyable, des jardins et des arts inspirants.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 8999.00 DH <span>10500 DH</span> </div>
+                <a href="#réserver" class="btn">Réserver</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Galerie  -->
+
+<section class="galerie" id="galerie">
+
+    <h1 class="heading">Galerie</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg">
+            <div class="content">
+                <h3>Les Jardins de La Koutoubia</h3>
+                <p>Marrakech, Maroc</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpeg">
+            <div class="content">
+                <h3>Mosquée sainte sophie</h3>
+                <p>Istanbul, Turquie</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpeg">
+            <div class="content">
+                <h3>Nécropole de Gizeh</h3>
+                <p>Caire, Egypte</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpeg">
+            <div class="content">
+                <h3>le Colisée</h3>
+                <p>Rome, Italie</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpeg">
+            <div class="content">
+                <h3>tour Eiffel</h3>
+                <p>Paris, France</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpeg">
+            <div class="content">
+                <h3>forum romain</h3>
+                <p>Rome, Italie</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpeg">
+            <div class="content">
+                <h3>Ménara Kuala Lumpur</h3>
+                <p>Kuala Lumpur, Malaisie</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpeg">
+            <div class="content">
+                <h3>Musée du Louvre</h3>
+                <p>Paris, France</p>
+                <a href="#forfaits" class="btn">découvrer plus</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Commentaires  -->
+
+<section class="commentaires" id="commentaires">
+
+    <h1 class="heading">Commentaires</h1>
+
+            <div class="commentaires-container">
+
+                <div class="box">
+                    <img src="images/pic1.jpg" >
+                    <h3>Moatassim</h3>
+                    <br><br/>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>"Très bon service"</h1>
+                    <p>Ces gars savent comment l'organisation de voyages est censée être faite, ils sont tellement professionnels et ont beaucoup d'expérience, ce fut une bonne expérience que je recommande vivement.</p>
+                    
+                </div>
+            
+                <div class="box">
+                    <img src="images/pic2.jpg" >
+                    <h3>Amal</h3>
+                    <br><br/>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1>"Très bonne agence de voyage!"</h1>
+                    <p>ils s'occupent de presque tout, ils vous évitent l'agitation de la planification et tout, alors vous vous détendez et profitez de votre voyage!</p>
+                   
+                </div>
+            
+                <div class="box">
+                    <img src="images/pic3.jpg" >
+                    <h3>Mohammed</h3>
+                    <br><br/>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1>"Meilleure expérience de tous les temps"</h1>
+                    <p>Je peux dire que j'ai fait les meilleurs souvenirs grâce à cette agence de voyage, le prix est aussi très raisonnable.!</p>
+                    
+                </div>
+            
+            </div>
+</section>
+
+
+<!-- Contact  -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">Contact</h1>
+
+    <h2 id="phrase-contact">si vous avez des questions vous pouvez nous envoyer un email...</h2>
+    <h2 id="phrase-contact">nous vous répondrons dans les 24 heures</h2>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-Us.gif" >
+        </div>
+
+        <form action="php/contact.php" method="POST">
+            <div class="inputBox">
+                <input type="text" placeholder="nom" name="nom_messager" required>
+                <input type="email" placeholder="email" name="email" required>
+            </div>
+            <div class="inputBox" id="subject">
+                <input type="text" placeholder="sujet" name="sujet">
+            </div>
+            <textarea placeholder="message" cols="30" rows="10" name="message" required></textarea>
+            <input type="submit" class="btn" value="Envoyer">
+        </form>
+
+    </div>
+    
+</section>
+
+
+
+<!-- Footer  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>à propos de nous</h3>
+            <p>VOYYAGER est la plus grande agence de voyages au Maroc, fondée en 1976. tout au long de ces années, nous avons constamment fourni
+                 le meilleur service aux meilleurs prix disponibles</p>
+                 <br><br/>
+            <a href="#" class="logo"><i class="fab fa-vine"></i>oyyager</a>
+        </div>
+        <div class="box">
+            <h3>succursales</h3>
+            <a class="succursales">Marrakesh</a>
+            <a class="succursales">Rabat</a>
+            <a class="succursales">Tanger</a>
+            <a class="succursales">Casablanca</a>
+            <a class="succursales">Paris</a>
+        </div>
+        <div class="box">
+            <h3>liens rapides</h3>
+            <div>
+                <a class="liens-rapides" href="#accueil">Accueil</a>
+                <a class="liens-rapides" href="#réserver">Réserver</a>
+                <a class="liens-rapides" href="#forfaits">Forfaits</a>
+                <a class="liens-rapides" href="#galerie">Galerie</a>
+                <a class="liens-rapides" href="#commentaires">Commentaires</a>
+                <a class="liens-rapides" href="#contact">Contact</a>
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>suivez-nous</h3>
+            <a class="social" href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <a class="social" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="social" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a class="social" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        </div>
+
+    </div>
+
+    <h2 class="credit"> Crée par <span> Younes KHOUBAZ </span> | Tous Droits Réservés ® </h2>
+
+</section>
+
+
+</body>
+</html>
